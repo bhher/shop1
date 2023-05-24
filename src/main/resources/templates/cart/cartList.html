@@ -133,10 +133,13 @@
                 data["cartItemId"] = cartItemId;
                 dataList.push(data);
             });
+<!-- 체크된 장바구니 상품 아이디를 전달하기 위해서 dataList  배열에 장바구니 아이디를 추가-->
+
 
             paramData['cartOrderDtoList'] = dataList;
-
+<!-- 장바구니 상품아이디를 저장하고 있는 dataList  배열을  paramData 객체에 추가 -->
             var param = JSON.stringify(paramData);
+<!-- paramData 객체를 json 형식의 문자열로 변환           -->
 
             $.ajax({
                 url      : url,

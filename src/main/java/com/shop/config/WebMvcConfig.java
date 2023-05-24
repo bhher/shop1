@@ -18,9 +18,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     }
     //addResourceHandlers 로컬 컴퓨터에 저장된 파일을 잃어오는 root 경로를 
     //설정
-    public void printUploadPath() {
-        System.out.println("uploadPath: " + uploadPath);
-    }
+
     //웹브라우저에 입력하는  url에 /images로 시작하는 경우 uploadPath에 설정한
     // 폴더를 기준으로 파일을 읽어 오도록 설정합니다.
 }

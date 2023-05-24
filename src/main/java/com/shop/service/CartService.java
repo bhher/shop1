@@ -115,7 +115,7 @@ public class CartService {
         } //장바구니 페이지에서 전달받은 주문상품번호를 이용하여 주문로직에 전달할 orderDto 객체를 만든다.
 
         Long orderId = orderService.orders(orderDtoList, email);
-        //장바구니에 담은 상품을 주문하도록 주문로직을 호출
+        //장바구니에 담은 상품을 주문하도록 주문로직을 호출 한다.
         
         for (CartOrderDto cartOrderDto : cartOrderDtoList) {
             CartItem cartItem = cartItemRepository
